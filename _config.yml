@@ -47,13 +47,17 @@ roles:
 #Education is required
 education:
  - level: Master of Science (M.Sc.)
-   date: 2020
+   date: 2021
    subject: Information and Communication Systems
    school: Hamburg University of Technology (TUHH)
  - level: Bachelor of Science (B.Sc.)
    date: 2016
    subject: Electronics and Communications Engineering
    school: Misr International University (MIU)
+   
+#List of interesting Github repo/projects to include - optional
+github:
+ - https://github.com/AbdullahSaei/monster
 
 intro: |
    Throughout my years of studying Informatics engineering in Egypt and at TUHH, I have demonstrated a good level of academic achievement and have shown a particular strength in software and hardware development. I have been consistently engaged in projects, most of which involved designing and implementations. For my research project in my master studies, it was at ComNets institute, I developed a power saving technique for 5G mobile network where I had to conduct a lot of simulations and data analysis in Object-Oriented Programming with Matlab. In addition to my academic background, I have experience working on various real-world projects where I have acquired practical skills in PCB designing, Hardwares, Sensors, Embedded Systems C/C++ programming and Scripting RPis. if not all, it also made a significant improvement in my non-cognitive skills such as time management, teamwork and communication with a diverse group of people.
