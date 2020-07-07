@@ -29,13 +29,13 @@ skills:
 #Work experience is required
 roles:
  - title: Working Student: Technical Support
-   start: 2018
-   end: 2020
+   start: 2019
+   end: Ongoing
    employer: 2CP GmbH in Hamburg, Germany
    description: C/C++ Embedded Programming, Python and Qt5 GUI development, IT and Networks Support.
  - title: Research Assistant (HiWi)
    start: 2018
-   end: 2018
+   end: 2019
    employer: ComNets Institute, Hamburg University of Technology (TUHH) in Hamburg, Germany
    description: C/C++ Embedded development for Wireless Networks, Matlab data analysis and data visualization, Research and Implementation of TSCH Protocol, Scripting to automate testbeds.
  - title: Professional Services Engineer
