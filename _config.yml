@@ -13,6 +13,45 @@ primarylinks:
  - title: LinkedIn
    url: https://linkedin.com/in/abdullahsaei
 
+#Sidebar info
+sidebar:
+    # Profile information
+    name: Abdullah Saei
+    avatar: photo.png #place a 100x100 picture inside /img/ folder and provide the name of the file below
+    tagline: Software Developer
+
+    # Sidebar links
+    email: abdullah.saei@tuhh.de
+    phone: +49 15758330545
+    
+    languages:
+      - idiom: English
+        level: C1
+
+      - idiom: German
+        level: B1
+
+      - idiom: Arabic
+        level: Native
+
+    interests:
+      - item: Software Development
+        link:
+
+      - item: Hardware Development
+        link:
+
+      - item: Data Analysis
+        link:
+
+      - item: Networks
+        link:
+
+      - item: Embedded Systems
+        link:
+
+
+
 #Any buzzword skills you want to include
 skills:
 
