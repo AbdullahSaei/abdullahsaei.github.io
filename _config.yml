@@ -30,7 +30,7 @@ skills:
 roles:
  - title: Working Student: Technical Support
    start: 2018
-   end: 2021
+   end: Ongoing
    employer: 2CP GmbH in Hamburg, Germany
    description: C/C++ Embedded Programming, Python and Qt5 GUI development, IT and Networks Support.
  - title: Research Assistant (HiWi)
@@ -47,7 +47,7 @@ roles:
 #Education is required
 education:
  - level: Master of Science (M.Sc.)
-   date: 2021
+   date: 2020
    subject: Information and Communication Systems
    school: Hamburg University of Technology (TUHH)
  - level: Bachelor of Science (B.Sc.)
