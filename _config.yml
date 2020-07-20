@@ -22,7 +22,7 @@ sidebar:
 
     # Sidebar links
     email: abdullah.saei@tuhh.de
-    phone: +49 15758330545
+    phone: +4915758330545
     
     languages:
       - idiom: English
@@ -50,8 +50,6 @@ sidebar:
       - item: Embedded Systems
         link:
 
-
-
 #Any buzzword skills you want to include
 skills:
 
@@ -70,17 +68,17 @@ roles:
  - title: Working Student Technical Support
    start: Oct 2018
    end: Ongoing
-   employer: 2CP GmbH in Hamburg, Germany
+   employer: 2CP GmbH in Hamburg-Germany
    description: C/C++ Embedded Programming, Python and Qt5 GUI development, IT and Networks Support.
- - title: Research Assistant (HiWi)
+ - title: Research Assistant HiWi
    start: Feb 2018
    end: Dec 2018
-   employer: ComNets Institute, Hamburg University of Technology (TUHH) in Hamburg, Germany
+   employer: ComNets Institute-TUHH in Hamburg-Germany
    description: C/C++ Embedded development for Wireless Networks, Matlab data analysis and data visualization, Research and Implementation of TSCH Protocol, Scripting to automate testbeds.
  - title: Professional Services Engineer
    start: Dec 2017
    end: Sep 2018
-   employer: Universal Advanced Solutions in Cairo, Egypt
+   employer: Universal Advanced Solutions in Cairo-Egypt
    description: Telecom technical support, Maintanince and Services for customers.
 
 #Education is required
@@ -88,11 +86,11 @@ education:
  - level: Master of Science (M.Sc.)
    date: 2021
    subject: Information and Communication Systems
-   school: Hamburg University of Technology (TUHH)
+   school: Hamburg University of Technology TUHH
  - level: Bachelor of Science (B.Sc.)
    date: 2016
    subject: Electronics and Communications Engineering
-   school: Misr International University (MIU)
+   school: Misr International University MIU
    
 #List of interesting Github repo/projects to include - optional
 github:

@@ -2,6 +2,7 @@
 .nav>li>a:focus, .nav>li>a:hover,.navbar-inverse .nav li.dropdown.open>.dropdown-toggle,.navbar-inverse .nav li.dropdown.active>.dropdown-toggle,.navbar-inverse .nav li.dropdown.open.active>.dropdown-toggle{
 	background-color: #2d3538;
 }
+
 .navbar-inverse .nav>li>a {
 	color: #A5C5DF;
 }
@@ -26,7 +27,6 @@
 	background-color: #005985;
 	text-shadow:none;
 	font-weight: normal;
-
 }
 
 /** Flat Buttons **/
