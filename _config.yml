@@ -1,3 +1,7 @@
+url: "https://abdullahsaei.github.io/" # the base hostname & protocol for your site
+plugins:
+  - jekyll-sitemap
+
 # Site settings
 title: Abdullah Saei
 name: Abdullah Saei
@@ -8,10 +12,10 @@ markdown: kramdown
 #User specific content
 #Links that will appear in the navbar
 primarylinks:
- - title: GitHub
-   url: https://github.com/abdullahsaei
- - title: LinkedIn
-   url: https://linkedin.com/in/abdullahsaei
+ - title: Services
+   url: /404.html
+ - title: Blog
+   url: /blog.html
 
 #Sidebar info
 sidebar:
