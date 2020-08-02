@@ -1,10 +1,10 @@
 {% assign sidebar = site.sidebar %}
 <div class="sidebar-wrapper">
 
-  <div class="profile-container">
+  <div class="profile-container w3-round-large w3-center w3-shadow">
 
     {% if sidebar.avatar %}
-    <img class="avatar" src="{{ site.baseurl }}/img/{{ sidebar.avatar }}" alt="profile picture" />
+    <img class="avatar w3-card-2 w3-circle" src="{{ site.baseurl }}/img/{{ sidebar.avatar }}" alt="profile picture" />
     {% endif %}
 
     {% if sidebar.name %}
@@ -15,10 +15,10 @@
     <h2 class="profileTagline">{{ sidebar.tagline }}</h2>
     {% endif %}
 
-    <p><button class="BtnDownload"><a href="/img/CV_AbdullahSaei.pdf" download="CV_AbdullahSaei"><i class="fa fa-cloud-download" aria-hidden="true"></i> Download my CV</a></button></p>
+    <p><button class="BtnDownload noDecoration"><a href="/img/CV_AbdullahSaei.pdf" download="CV_AbdullahSaei.pdf"><i class="fa fa-cloud-download w3-margin-right w3-text-theme" aria-hidden="true"></i>Download my CV</a></button></p>
 
   </div><!--//profile-container-->
-  <h2>Contacts: </h2>
+
   {% include contact.html %}
   {% include language.html %}
   {% include interests.html %}

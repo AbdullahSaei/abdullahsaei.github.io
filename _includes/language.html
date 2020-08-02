@@ -8,7 +8,11 @@
 
   <ul class="list-unstyled interests-list">
     {%for language in languages %}
+      {% capture flagclass %}
+        flag-icon flag-icon-{{ language.flag | downcase }}
+      {% endcapture %}
     <li>
+      <span class="{{ flagclass }} w3-margin-right"></span>
       {{ language.idiom }}
       <span class="lang-desc">({{ language.level }})</span>
     </li>

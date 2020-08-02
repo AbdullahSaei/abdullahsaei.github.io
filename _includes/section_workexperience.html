@@ -1,4 +1,4 @@
-<div class="rounded_panel txt_lightgrey">
+<div class="rounded_panel txt_lightgrey w3-card-4">
 	<div class="top-rounded-panel grey-bg">
 		<h1>Work & Education Timeline</h1>
 	</div>
@@ -8,9 +8,9 @@
 
 					{% for role in site.roles %}
 						<div class="timeline">
-								<a href="#" class="timeline-content"  data-toggle="modal" data-target="#{{role.employer | replace: ' ', '_'}}-{{role.title | replace: ' ', '_'}}">
+								<a href="#" class="timeline-content w3-hover-shadow"  data-toggle="modal" data-target="#{{role.employer | replace: ' ', '_'}}-{{role.title | replace: ' ', '_'}}">
 										<span class="year">{{role.start}}</span>
-										<div class="inner-content w3-round-large">
+										<div class="inner-content w3-round-large w3-card-4 w3-hover-shadow">
 												<h3 class="title">{{role.title}}</h3>
 												<h5><i class="fa fa-briefcase w3-text-theme" aria-hidden="true"></i> {{role.employer}}</h5>
 												<h5><i class="fa fa-location-arrow w3-text-theme" aria-hidden="true"></i> {{role.location}}</h5>
@@ -21,9 +21,9 @@
 
 					{% for edu in site.education %}
 						<div class="timeline">
-								<a href="#" class="timeline-content"  data-toggle="modal" data-target="#{{edu.school | replace: '.', '' | replace: ' ', ''}}-{{edu.level | replace: '.', '' | replace: ' ', '' | replace: '(', '' | replace: ')', ''}}">
+								<a href="#" class="timeline-content  w3-hover-shadow"  data-toggle="modal" data-target="#{{edu.school | replace: '.', '' | replace: ' ', ''}}-{{edu.level | replace: '.', '' | replace: ' ', '' | replace: '(', '' | replace: ')', ''}}">
 										<span class="year">{{edu.date}}</span>
-										<div class="inner-content w3-round-large">
+										<div class="inner-content w3-round-large w3-card-4">
 												<h3 class="title">{{edu.level}}</h3>
 												<h5><i class="fa fa-graduation-cap w3-text-theme" aria-hidden="true"></i> {{edu.subject}}</h5>
 												<h5><i class="fa fa-location-arrow w3-text-theme" aria-hidden="true"></i> {{edu.location}}</h5>

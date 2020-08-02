@@ -23,16 +23,25 @@ sidebar:
     # Sidebar links
     email: abdullah.saei@tuhh.de
     phone: +49 15758330545
+    whatsapp: 4915758330545
+    linkedin: AbdullahSaei
+    github: AbdullahSaei
+    gitlab: AbdullahSaei
+    stack-overflow: 7097144/abdullah-saei
+    twitter: AboodMhdS
     
     languages:
       - idiom: English
         level: C1 Fluent
+        flag: US
 
       - idiom: German
         level: B1 Intermediate
+        flag: DE 
 
       - idiom: Arabic
         level: Native
+        flag: EG
 
     interests:
       - item: Software Development

@@ -1,72 +1,108 @@
 <div class="contact-container container-block">
-  <ul class="list-unstyled contact-list">
+   
+  <h2 class="container-block-title">
+    Contact
+  </h2>
+
+  <ul class="list-unstyled contact-list field">
 
     {% if sidebar.email %}
-    <li class="email"><i class="fa fa-envelope fa-fw w3-margin-right w3-text-theme" aria-hidden="true"></i>
-      <a href="mailto:{{ sidebar.email }}">{{ sidebar.email }}</a>
+    <li>
+      <a class="sns-btn noDecoration" href="mailto:{{ sidebar.email }}">
+        <i class="sns-btn-icon fa fa-envelope w3-text-theme" aria-hidden="true"></i>
+      </a>
     </li>
     {% endif %}
 
     {% if sidebar.phone %}
-    <li class="phone"><i class="fa fa-phone fa-fw w3-margin-right w3-text-theme" aria-hidden="true"></i>
-      <a href="tel:{{ sidebar.phone }}">{{ sidebar.phone }}</a>
-      <i class="fa fa-whatsapp" aria-hidden="true"></i>
+    <li class="sns-btn noDecoration">
+      <a href="tel:{{ sidebar.phone }}">
+        <i class="sns-btn-icon fa fa-phone w3-text-theme" aria-hidden="true"></i>
+      </a>
     </li>
     {% endif %}
 
+    {% if sidebar.whatsapp %}
+    <li>
+        <a class="sns-btn noDecoration" href="https://wa.me/{{ sidebar.whatsapp }}/?text=Hello%20Abdullah%20Saei">
+          <i class="sns-btn-icon fa fa-whatsapp" aria-hidden="true"></i>
+        </a> 
+    </li>
+    {% endif %} 
+
     {% if sidebar.website %}
-    <li class="website"><i class="fa fa-globe-americas"></i>
-      <a href="http://{{ sidebar.website }}" target="_blank">{{ sidebar.website }}</a>
+    <li>
+      <a class="sns-btn noDecoration" href="http://{{ sidebar.website }}" target="_blank">
+        <i class="sns-btn-icon fa fa-globe-americas"></i>
+      </a>
     </li>
     {% endif %}
 
     {% if sidebar.linkedin %}
-    <li class="linkedin"><i class="fa fa-linkedin"></i>
-      <a href="https://linkedin.com/in/{{ sidebar.linkedin }}" target="_blank">{{ sidebar.linkedin }}</a>
+    <li>
+      <a class="sns-btn noDecoration" href="https://linkedin.com/in/{{ sidebar.linkedin }}" target="_blank">
+        <i class="sns-btn-icon fa fa-linkedin"></i>
+      </a>
     </li>
     {% endif %}
 
     {% if sidebar.github %}
-    <li class="github"><i class="fa fa-github"></i>
-      <a href="http://github.com/{{ sidebar.github }}" target="_blank">{{ sidebar.github }}</a>
+    <li>
+      <a class="sns-btn noDecoration" href="http://github.com/{{ sidebar.github }}" target="_blank">
+        <i class="sns-btn-icon fa fa-github"></i>
+      </a>
     </li>
     {% endif %}
 
     {% if sidebar.gitlab %}
-    <li class="gitlab"><i class="fa fa-gitlab"></i>
-      <a href="http://gitlab.com/{{ sidebar.gitlab }}" target="_blank">{{ sidebar.gitlab }}</a>
+    <li>
+      <a class="sns-btn noDecoration" href="http://gitlab.com/{{ sidebar.gitlab }}" target="_blank">
+        <i class="sns-btn-icon fa fa-gitlab"></i>
+      </a>
     </li>
     {% endif %}
 
     {% if sidebar.bitbucket %}
-    <li class="bitbucket"><i class="fa fa-bitbucket"></i>
-      <a href="http://bitbucket.com/{{ sidebar.bitbucket }}" target="_blank">{{ sidebar.bitbucket }}</a>
+    <li>
+      <a class="sns-btn noDecoration" href="http://bitbucket.com/{{ sidebar.bitbucket }}" target="_blank">
+        <i class="sns-btn-icon fa fa-bitbucket"></i>
+      </a>
     </li>
     {% endif %}
-
+  <!--
     {% if sidebar.twitter %}
-    <li class="twitter"><i class="fa fa-twitter"></i>
-      <a href="https://twitter.com/{{ sidebar.twitter }}" target="_blank">{{ sidebar.twitter }}</a>
+    <li>
+      <a class="sns-btn noDecoration" href="https://twitter.com/{{ sidebar.twitter }}" target="_blank">
+        <i class="sns-btn-icon fa fa-twitter"></i>
+      </a>
     </li>
     {% endif %}
+  -->
 
     {% if sidebar.stack-overflow %}
-    <li class="stack-overflow"><i class="fa fa-stack-overflow"></i>
-      <a href="https://stackoverflow.com/users/{{ sidebar.stack-overflow }}" target="_blank">{{ sidebar.stack-overflow }}</a>
+    <li>
+      <a class="sns-btn noDecoration" href="https://stackoverflow.com/users/{{ sidebar.stack-overflow }}" target="_blank">
+        <i class="sns-btn-icon fa fa-stack-overflow"></i>
+      </a>
     </li>
     {% endif %}
 
     {% if sidebar.codewars %}
-    <li class="codewars"><i class="fa fa-code"></i>
-      <a href="https://www.codewars.com/users/{{ sidebar.codewars }}/completed_solutions" target="_blank">{{ sidebar.codewars }}</a>
+    <li>
+      <a class="sns-btn noDecoration" href="https://www.codewars.com/users/{{ sidebar.codewars }}/completed_solutions" target="_blank">
+        <i class="sns-btn fa fa-code"></i>
+      </a>
     </li>
     {% endif %}
 
     {% if sidebar.goodreads %}
-    <li class="goodreads-g"><i class="fa fa-goodreads-g"></i>
-      <a href="https://www.goodreads.com/user/show/{{ sidebar.goodreads }}" target="_blank">{{ sidebar.goodreads }}</a>
+    <li>
+      <a class="sns-btn noDecoration" href="https://www.goodreads.com/user/show/{{ sidebar.goodreads }}" target="_blank">
+        <i class="sns-btn fa fa-goodreads-g"></i>
+      </a>
     </li>
     {% endif %}
 
   </ul>
+
 </div><!--//contact-container-->

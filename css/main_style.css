@@ -23,10 +23,22 @@ table {
 	font-size:16px;
 }
 
+.field {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
 .col-md-3 {
 	padding: 5px;
-	background-color: lightblue;
+    background: linear-gradient(#337ab7, #42a8c0);
 	border: 1px solid black;
+}
+
+.profile-container{
+    padding-top: 5px;
+    border: 1px;
+    background: #337ab7;
 }
 
 .avatar{
@@ -36,7 +48,6 @@ table {
 	vertical-align: middle;
   	width: 90%;
   	border: 1px solid black;
-  	border-radius: 50%;
 }
 
 .profileName{
@@ -263,29 +274,74 @@ h2 {
 	font-size:14px;
 	color:#EC5D35;
 	font-weight:bold;
-	margin:1px 0;
+	margin:20px 0px 2px 0;
 }
 
 h3 {
 	font-size:14px;
 }
 
+.sns-btn {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 35px;
+    width: 35px;
+    position: relative;
+    border-radius: 50%;
+    border: none;
+    transition-duration: 0.7s;
+    transform: rotateX(45deg);
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.sns-btn-icon{
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 60%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 0.1em;
+    color: #fff;
+}
+
+.sns-btn:hover .sns-btn-icon{
+    color: #000;
+}
+.sns-btn:hover{
+    transform: scale(1.2);
+    box-shadow: none;
+}
+
 .BtnDownload {
-  border: none;
   outline: 0;
   display: inline-block;
   padding: 8px;
   color: white;
+  border: 2px solid #000; /* Green */
   background-color: #000;
   text-align: center;
   cursor: pointer;
   width: 100%;
   font-size: 18px;
+  transition-duration: 0.7s;
+  text-decoration: none;
 }
 
 
-.BtnDownload:hover {
-  opacity: 0.7;
+.noDecoration, a:link{
+    text-decoration: none;
+}
+
+a:hover{
+    color: inherit;
+}
+
+.BtnDownload:hover, .sns-btn:hover{
+    color: #000;
+    background-color: #fff;
 }
 
 .nerdScoreHeader{
@@ -296,8 +352,6 @@ h3 {
 	background-color: #ff6840;
 	color: #ffd873;
 }
-
-
 
 .search-row > td{
 	padding-bottom: 10px;
