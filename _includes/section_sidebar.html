@@ -8,15 +8,17 @@
     {% endif %}
 
     {% if sidebar.name %}
-    <h1 class="name">{{ sidebar.name }}</h1>
+    <h1 class="profileName">{{ sidebar.name }}</h1>
     {% endif %}
 
     {% if sidebar.tagline %}
-    <h3 class="tagline">{{ sidebar.tagline }}</h3>
+    <h2 class="profileTagline">{{ sidebar.tagline }}</h2>
     {% endif %}
 
-  </div><!--//profile-container-->
+    <p><button class="BtnDownload"><a href="/img/CV_AbdullahSaei.pdf" download="CV_AbdullahSaei"><i class="fa fa-cloud-download" aria-hidden="true"></i> Download my CV</a></button></p>
 
+  </div><!--//profile-container-->
+  <h2>Contacts: </h2>
   {% include contact.html %}
   {% include language.html %}
   {% include interests.html %}

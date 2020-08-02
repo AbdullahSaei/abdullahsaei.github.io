@@ -18,18 +18,18 @@ sidebar:
     # Profile information
     name: Abdullah Saei
     avatar: photo.png #place a 100x100 picture inside /img/ folder and provide the name of the file below
-    tagline: Communication Engineer - Software
+    tagline: Communication Engineer - Software Developer
 
     # Sidebar links
     email: abdullah.saei@tuhh.de
-    phone: +4915758330545
+    phone: +49 15758330545
     
     languages:
       - idiom: English
-        level: C1
+        level: C1 Fluent
 
       - idiom: German
-        level: B1
+        level: B1 Intermediate
 
       - idiom: Arabic
         level: Native
@@ -56,45 +56,79 @@ skills:
  - Programming
  - Software Development
  - Hardware Development
- - Data Analysis
+ - Data analysis
+ - Machine learning
  - Networks
- - Wireless Communications
- - Embedded Systems
+ - Wireless communications
+ - Embedded systems
  - Linux
- - Android Development
+ - PCB designing
+ - Web development
+ - Android development
 
 #Work experience is required
 roles:
  - title: Working Student Technical Support
    start: Oct 2018
    end: Ongoing
-   employer: 2CP GmbH in Hamburg-Germany
-   description: C/C++ Embedded Programming, Python and Qt5 GUI development, IT and Networks Support.
+   employer: 2CP GmbH
+   location: Hamburg - Germany
+   description: |
+        C/C++ Embedded Programming Atmel and ATtiny. </br>
+        Python and Qt5 GUI development. </br>
+        RPi scripting </br>
+        PCB designing </br>
+        IT and Networks Support. 
  - title: Research Assistant HiWi
    start: Feb 2018
    end: Dec 2018
-   employer: ComNets Institute-TUHH in Hamburg-Germany
-   description: C/C++ Embedded development for Wireless Networks, Matlab data analysis and data visualization, Research and Implementation of TSCH Protocol, Scripting to automate testbeds.
+   employer: ComNets Institute - TUHH
+   location: Hamburg - Germany
+   description: |
+        C/C++ Embedded development for Wireless Networks. </br>
+        Matlab data analysis and data visualization. </br>
+        Research and Implementation of TSCH Protocol. </br>
+        Scripting to automate testbeds.
  - title: Professional Services Engineer
    start: Dec 2017
    end: Sep 2018
-   employer: Universal Advanced Solutions in Cairo-Egypt
-   description: Telecom technical support, Maintanince and Services for customers.
+   employer: Universal Advanced Solutions
+   location: Cairo - Egypt
+   description: |
+        Telecom technical support. </br>
+        Maintanince and Services for telecoms</br>
+        Training and customers support.
 
 #Education is required
 education:
  - level: Master of Science (M.Sc.)
-   date: 2021
+   date: Jul 2021
    subject: Information and Communication Systems
    school: Hamburg University of Technology TUHH
+   location: Hamburg - Germany
+   grade: Good - 2,2 of 5,0 German GPA
+   projects:
+      - research: Energy Optimization in 5G basestations
+      - thesis: D2D Communication
+
  - level: Bachelor of Science (B.Sc.)
-   date: 2016
+   date: Jul 2016
    subject: Electronics and Communications Engineering
    school: Misr International University MIU
+   grade: Excellent with high Honor - 3.64 of 4.0 GPA
+   location: Cairo - Egypt
+   projects:
+      - research: CMOS and VLSI development
+      - thesis: D2D Communication
    
 #List of interesting Github repo/projects to include - optional
 github:
  - AbdullahSaei/monster
+ - AbdullahSaei/NightMovieApp
 
-intro: |
-   Throughout my years of studying Informatics engineering in Egypt and at TUHH, I have demonstrated a good level of academic achievement and have shown a particular strength in software and hardware development. I have been consistently engaged in projects, most of which involved designing and implementations. For my research project in my master studies, it was at ComNets institute, I developed a power saving technique for 5G mobile network where I had to conduct a lot of simulations and data analysis in Object-Oriented Programming with Matlab. In addition to my academic background, I have experience working on various real-world projects where I have acquired practical skills in PCB designing, Hardwares, Sensors, Embedded Systems C/C++ programming and Scripting RPis. if not all, it also made a significant improvement in my non-cognitive skills such as time management, teamwork and communication with a diverse group of people.
+intro: >
+   Throughout my years of studying Informatics engineering in Egypt and at TUHH, I have demonstrated a good level of academic achievement and have shown a particular strength in software and hardware development.
+   I have been consistently engaged in projects, most of which involved designing and implementations.
+   For my research project in my master studies, it was at ComNets institute, I developed a power saving technique for 5G mobile network where I had to conduct a lot of simulations and data analysis in Object-Oriented Programming with Matlab.
+   In addition to my academic background, I have experience working on various real-world projects where I have acquired practical skills in PCB designing, Hardwares, Sensors, Embedded Systems C/C++ programming and Scripting RPis.
+   if not all, it also made a significant improvement in my non-cognitive skills such as time management, teamwork and communication with a diverse group of people.

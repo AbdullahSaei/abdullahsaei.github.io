@@ -1,29 +1,32 @@
 <div class="rounded_panel txt_lightgrey">
 	<div class="top-rounded-panel grey-bg">
-		<h1>Work Experience</h1>
+		<h1>Work & Education Timeline</h1>
 	</div>
 	<div class="content-rounded-panel">
-		<div>
+		<div class="TimeLineContainer">
 			<div class="main-timeline4">
 
 					{% for role in site.roles %}
 						<div class="timeline">
 								<a href="#" class="timeline-content"  data-toggle="modal" data-target="#{{role.employer | replace: ' ', '_'}}-{{role.title | replace: ' ', '_'}}">
 										<span class="year">{{role.start}}</span>
-										<div class="inner-content">
+										<div class="inner-content w3-round-large">
 												<h3 class="title">{{role.title}}</h3>
-												<h5>{{role.employer}}</h5>
+												<h5><i class="fa fa-briefcase w3-text-theme" aria-hidden="true"></i> {{role.employer}}</h5>
+												<h5><i class="fa fa-location-arrow w3-text-theme" aria-hidden="true"></i> {{role.location}}</h5>
 										</div>
 								</a>
 						</div>
 					{% endfor %}
+
 					{% for edu in site.education %}
 						<div class="timeline">
 								<a href="#" class="timeline-content"  data-toggle="modal" data-target="#{{edu.school | replace: '.', '' | replace: ' ', ''}}-{{edu.level | replace: '.', '' | replace: ' ', '' | replace: '(', '' | replace: ')', ''}}">
 										<span class="year">{{edu.date}}</span>
-										<div class="inner-content">
+										<div class="inner-content w3-round-large">
 												<h3 class="title">{{edu.level}}</h3>
-												<h5>{{edu.subject}}</h5>
+												<h5><i class="fa fa-graduation-cap w3-text-theme" aria-hidden="true"></i> {{edu.subject}}</h5>
+												<h5><i class="fa fa-location-arrow w3-text-theme" aria-hidden="true"></i> {{edu.location}}</h5>
 										</div>
 								</a>
 						</div>
@@ -37,12 +40,16 @@
 					<div class="modal-dialog" role="document">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h3 class="modal-title">{{role.title}} - {{role.employer}}</h3>
+								<h3 class="modal-title">{{role.title}} - {{role.employer}} <br/>
+									<h5><i class="fa fa-calendar w3-text-theme" aria-hidden="true"></i> {{role.start}} - {{role.end}}</h5>
+									<i class="fa fa-location-arrow w3-text-theme" aria-hidden="true"></i> {{role.location}}
+								</h3>
 								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 									<span aria-hidden="true">&times;</span>
 								</button>
 							</div>
 							<div class="modal-body">
+								<h1>Tasks:</h1>
 								{{role.description}}
 							</div>
 						</div>
@@ -54,13 +61,29 @@
 					<div class="modal-dialog" role="document">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h3 class="modal-title">{{edu.level}} - {{edu.school}}</h3>
+								<h3 class="modal-title">{{edu.level}} - {{edu.school}}<br/>
+									<i class="fa fa-location-arrow w3-text-theme" aria-hidden="true"></i> {{edu.location}}
+								</h3>
 								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 									<span aria-hidden="true">&times;</span>
 								</button>
 							</div>
 							<div class="modal-body">
 								{{edu.subject}}
+								<p>
+									Grade: {{edu.grade}}
+								</p>
+								<h1>Projects:</h1>
+								<dl>
+									{% for proj in edu.projects %}
+										{% if proj.thesis %}
+											<dd> Thesis: 
+											<dt> {{proj.thesis}}
+											{% else %} 
+											<dt> {{proj.research}}
+										{% endif %}
+									{% endfor %}
+								</dl>
 							</div>
 						</div>
 					</div>
