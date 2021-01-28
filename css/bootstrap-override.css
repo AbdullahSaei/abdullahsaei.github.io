@@ -81,12 +81,12 @@
 }
 
 .navbar-toggle {
-	margin: 0px;
+	margin: 0px 5px;
 	padding: 11px 5px;
 }
 
 .glyphicon {
-	margin-inline: 10px;
+	margin-inline: 15px;
 }
 
 .navbar-brand {
