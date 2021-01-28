@@ -79,3 +79,16 @@
 	background-image: -moz-linear-gradient(top, #bf4e30, #bf4e30);
 	border: 0px;
 }
+
+.navbar-toggle {
+	margin: 0px;
+	padding: 11px 5px;
+}
+
+.glyphicon {
+	margin-inline: 10px;
+}
+
+.navbar-brand {
+	margin: 0;
+}
