@@ -81,6 +81,15 @@ skills:
 
 #Work experience is required
 roles:
+ - title: System Engineer
+   start: Oct 2021
+   end: Ongoing
+   employer: Software Security Institute at TUHH
+   location: Hamburg - Germany
+   description: |
+        Manage IT infrastructure of the institute including Networks and Web development. </br>
+        Design and develop software prototypes as part of various research projects </br>
+        Software (Python, Bash, C/C++) and Hardware (Sensors, IoT devices..) development </br>
  - title: Working Student Technical Support
    start: Oct 2018
    end: Ongoing
