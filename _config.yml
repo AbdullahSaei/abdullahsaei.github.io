@@ -25,7 +25,7 @@ sidebar:
     tagline: Communication Engineer - Software Developer
 
     # Sidebar links
-    email: abdullah.saei@tuhh.de
+    email: a.saei@gmx.de
     phone: +49 15758330545
     whatsapp: 4915758330545
     linkedin: AbdullahSaei
@@ -40,7 +40,7 @@ sidebar:
         flag: US
 
       - idiom: German
-        level: B1 Intermediate
+        level: B2 Upper-Intermediate
         flag: DE 
 
       - idiom: Arabic
@@ -81,16 +81,25 @@ skills:
 
 #Work experience is required
 roles:
+ - title: IT-System Manager
+   start: Aug 2024
+   end: Ongoing
+   employer: Flugzeug-Systemtechnik at TUHH
+   location: Hamburg - Germany
+   description: |
+        Manage IT infrastructure of the institute including Networks and Web development. </br>
+        Design and develop software prototypes as part of various research projects </br>
+        Software (Python, Bash, C/C++) and Hardware (Sensors, IoT devices..) development </br>
  - title: System Engineer
    start: Oct 2021
-   end: Ongoing
+   end: Aug 2024
    employer: Software Security Institute at TUHH
    location: Hamburg - Germany
    description: |
         Manage IT infrastructure of the institute including Networks and Web development. </br>
         Design and develop software prototypes as part of various research projects </br>
         Software (Python, Bash, C/C++) and Hardware (Sensors, IoT devices..) development </br>
- - title: Working Student Technical Support
+ - title: Nebenjob Technical Support
    start: Oct 2018
    end: Ongoing
    employer: 2CP GmbH
@@ -151,7 +160,7 @@ github:
  - Electroscape/Electroscape-Interface 
 
 intro: >
-   Throughout my years of studying Informatics engineering in Egypt and at TUHH, I have demonstrated a good level of academic achievement and have shown a particular strength in software and hardware development.
+   Throughout my years of studying communications engineering in Egypt and in Germany, I have demonstrated a good level of academic achievement and have shown a particular strength in software and hardware development.
    I have been consistently engaged in projects, most of which involved designing and implementations.
    For my research project in my master studies, it was at ComNets institute, I developed a power saving technique for 5G mobile network where I had to conduct a lot of simulations and data analysis in Object-Oriented Programming with Matlab.
    In addition to my academic background, I have experience working on various real-world projects where I have acquired practical skills in PCB designing, Hardwares, Sensors, Embedded Systems C/C++ programming and Scripting RPis.
