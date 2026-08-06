@@ -1,0 +1,60 @@
+{% assign resume = site.data.portfolio.resume %}
+<article class="resume active" data-page="resume">
+
+  <header>
+    <h2 class="h2 article-title">Resume</h2>
+  </header>
+
+  <!-- education -->
+  <section class="timeline">
+    <div class="title-wrapper">
+      <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+      <h3 class="h3">Education</h3>
+    </div>
+    <ol class="timeline-list">
+      {% for item in resume.education %}
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">{{ item.degree }}</h4>
+        <p class="timeline-text">{{ item.University }}</p>
+        <span>{{ item.period }}</span>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <!-- experience -->
+  <section class="timeline">
+    <div class="title-wrapper">
+      <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+      <h3 class="h3">Experience</h3>
+    </div>
+    <ol class="timeline-list">
+      {% for item in resume.experience %}
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">{{ item.title }} @ {{ item.employer }}</h4>
+        <span>{{ item.period }}</span>
+        <p class="timeline-text">{{ item.text }}</p>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <!-- skills -->
+  <section class="skill">
+    <h3 class="h3 skills-title">My skills</h3>
+
+    <div class="skills-groups">
+      {% for group in resume.skill_groups %}
+      <div class="skills-group">
+        <h5 class="skills-group-title">{{ group.name }}</h5>
+        <ul class="skills-tag-list">
+          {% for s in group.skills %}
+          <li class="skills-tag">{{ s }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+</article>

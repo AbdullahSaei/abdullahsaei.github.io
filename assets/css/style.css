@@ -1,0 +1,17 @@
+/* ─────────────────────────────────────────
+   style.css  —  entry point, imports only
+   ───────────────────────────────────────── */
+
+/* base */
+@import url('./base/variables.css');
+@import url('./base/reset.css');
+@import url('./base/reused.css');
+
+/* components */
+@import url('./components/sidebar.css');
+@import url('./components/navbar.css');
+@import url('./components/about.css');
+@import url('./components/resume.css');
+
+/* responsive (always last) */
+@import url('./responsive.css');

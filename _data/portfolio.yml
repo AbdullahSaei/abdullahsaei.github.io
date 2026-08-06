@@ -1,0 +1,100 @@
+# _data/portfolio.yml
+# ─────────────────────────────────────────
+# Edit this file to update every section
+# of your portfolio. Jekyll reads it at
+# build time — no JavaScript fetch needed.
+# ─────────────────────────────────────────
+
+profile:
+  name: Abdullah Saei
+  title: >-
+    M. Sc. Communications Engineer<br>IT System Manager, PMP
+  avatar: /assets/images/my-avatar.png
+  email: a.saei(at)gmx(dot)de
+  phone: "15758330545"
+  phone_code: "de-code.png"
+  location: Hamburg, Germany
+  languages: 
+    - name: Arabic
+      level: C2
+    - name: English
+      level: C2
+    - name: German
+      level: C1
+  socials:
+    - icon: logo-linkedin
+      url: "https://www.linkedin.com/in/abdullahsaei/"
+    - icon: logo-github
+      url: "https://github.com/AbdullahSaei"
+
+about:
+  bio: >
+    As an IT System Manager with an M.Sc. in Information and Communication Systems, I bring expertise in managing enterprise IT infrastructure, networks, and web development.
+    With experience designing and developing software prototypes for research initiatives, I excel in translating complex technical requirements into scalable solutions.
+    My technical proficiency spans Python, Bash, and C/C++ for software development, combined with hands-on expertise in embedded systems, IoT devices, and sensor integration.
+    I have successfully managed IT operations while contributing to cutting-edge research in 5G networks and power-optimization techniques.
+    My background in communications engineering, PCB design, and Raspberry Pi development complements my systems management capabilities.
+    I am dedicated to building robust infrastructure, fostering cross-functional collaboration, and delivering innovative technical solutions that drive organizational success.
+
+resume:
+  education:
+    - degree: Master of Science (M.Sc.) Information and Communication Systems
+      period: "Sep 2017 - Jul 2021"
+      University: Hamburg University of Technology TUHH
+        
+    - degree: Bachelor of Science (B.Sc.) Electronics and Communications Engineering
+      period: "Sep 2011 - Jul 2016"
+      University: Misr International University MIU
+
+  experience:
+    - title: IT-System Manager
+      employer: "Aircraft Systems Engineering Institute (TUHH)"
+      period: "Aug 2024 — Present"
+      text: >
+        Manage IT infrastructure, including networks, servers, SQL databases, and enterprise services.
+        Lead and assist technicians and apprentices (Azubis) in daily IT operations.
+        Ensure system security, reliability, and compliance with IT policies and standards.
+        Plan and manage IT budgets, procurement, and resource allocation.
+    
+    - title: System Engineer
+      employer: "Software Security Institute (TUHH)"
+      period: "Oct 2021 — Jul 2024"
+      text: >
+        Supported IT infrastructure operations, including networks, servers, SQL databases, and service platforms. 
+        Contributed to software and hardware prototype development for research initiatives.
+
+    - title: Minijob Technical Support
+      employer: "Pause & Play Hamburg and Stuttgart"
+      period: "Oct 2018 — Present"
+      text: >
+        C/C++ Embedded Programming Atmel and ATtiny. </br>
+        Python development, RPi scripting, PCB designing </br>
+        IT and Networks Support. 
+  
+  skill_groups:
+  - name: Management & Delivery
+    skills:
+      - Project Management
+      - Agile
+      - ITIL Practices
+      - TOGAF Practices
+
+  - name: Engineering & Development
+    skills:
+      - Programming
+      - SQL
+      - Embedded systems
+      - Bash/Powershell scripting
+
+  - name: Cyber Security
+    skills:
+      - DevSecOps
+      - CI/CD
+      - SSDLC
+      - Networks
+
+  - name: Analysis & Tools
+    skills:
+      - Data analysis
+      - LaTeX
+      - Regex

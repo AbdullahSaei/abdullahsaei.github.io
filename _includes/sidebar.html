@@ -1,0 +1,70 @@
+{% assign p = site.data.portfolio.profile %}
+<aside class="sidebar" data-sidebar>
+
+  <div class="sidebar-info">
+    <figure class="avatar-box">
+      <img src="{{ p.avatar }}" alt="{{ p.name }}" width="80">
+    </figure>
+
+    <div class="info-content">
+      <h1 class="name" title="{{ p.name }}">{{ p.name }}</h1>
+      <p class="title">{{ p.title }}</p>
+    </div>
+
+    <button class="info_more-btn" data-sidebar-btn>
+      <span>Show Contacts</span>
+      <ion-icon name="chevron-down"></ion-icon>
+    </button>
+  </div>
+
+  <div class="sidebar-info_more">
+    <div class="separator"></div>
+
+    <ul class="contacts-list">
+      <li class="contact-item">
+        <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+        <div class="contact-info">
+          <p class="contact-title">Email</p>
+          <p class="contact-link">{{ p.email }}</p>
+        </div>
+      </li>
+      <li class="contact-item">
+        <div class="icon-box"><img src="/assets/images/{{ p.phone_code }}" alt="phone code"></div>
+        <div class="contact-info">
+          <p class="contact-title">Phone</p>
+          <p class="contact-link">{{ p.phone }}</p>
+        </div>
+      </li>
+      <li class="contact-item">
+        <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
+        <div class="contact-info">
+          <p class="contact-title">Location</p>
+          <address>{{ p.location }}</address>
+        </div>
+      </li>
+      <li class="contact-item">
+        <div class="icon-box"><ion-icon name="globe"></ion-icon></div>
+        <div class="contact-info">
+          <p class="contact-title">Languages</p>
+          <p class="contact-link">
+            {% for l in p.languages %}
+              {{ l.name }} ({{ l.level }}){% if forloop.last == false %}, {% endif %}
+            {% endfor %}
+        </div>
+      </li>
+    </ul>
+
+    <div class="separator"></div>
+
+    <ul class="social-list">
+      {% for s in p.socials %}
+      <li class="social-item">
+        <a href="{{ s.url }}" class="social-link">
+          <ion-icon name="{{ s.icon }}"></ion-icon>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+</aside>
