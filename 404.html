@@ -4,23 +4,222 @@ layout: null
 title: "404 — Page not found"
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="container">
-  <h1>404</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page not found</title>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .error-card {
+      background: var(--eerie-black-2);
+      border: 1px solid var(--jet);
+      border-radius: 20px;
+      box-shadow: var(--shadow-5);
+      padding: 40px 25px;
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .error-code {
+      font-size: 96px;
+      font-weight: var(--fw-600);
+      line-height: 1;
+      margin-bottom: 10px;
+      background: var(--text-gradient-yellow);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .error-icon-box {
+      position: relative;
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 20px;
+      background: var(--border-gradient-onyx);
+      border-radius: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--orange-yellow-crayola);
+      font-size: 32px;
+      box-shadow: var(--shadow-2);
+      z-index: 1;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .error-icon-box::before {
+      content: "";
+      position: absolute;
+      inset: 1px;
+      background: var(--eerie-black-1);
+      border-radius: inherit;
+      z-index: -1;
+    }
+
+    .error-icon-box ion-icon { --ionicon-stroke-width: 35px; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .error-title {
+      color: var(--white-2);
+      font-size: var(--fs-2);
+      font-weight: var(--fw-500);
+      margin-bottom: 12px;
+      text-transform: capitalize;
+    }
+
+    .error-text {
+      color: var(--light-gray);
+      font-size: var(--fs-6);
+      font-weight: var(--fw-300);
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .error-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .error-btn {
+      position: relative;
+      width: 100%;
+      background: var(--border-gradient-onyx);
+      color: var(--orange-yellow-crayola);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: 13px 20px;
+      border-radius: 14px;
+      font-size: var(--fs-6);
+      text-transform: capitalize;
+      box-shadow: var(--shadow-3);
+      z-index: 1;
+      transition: var(--transition-1);
+      margin: auto;
+    }
+
+    .error-btn::before {
+      content: "";
+      position: absolute;
+      inset: 1px;
+      background: var(--bg-gradient-jet);
+      border-radius: inherit;
+      z-index: -1;
+      transition: var(--transition-1);
+    }
+
+    .error-btn:hover { background: var(--bg-gradient-yellow-1); }
+
+    .error-btn:hover::before { background: var(--bg-gradient-yellow-2); }
+
+    .error-btn ion-icon { font-size: 16px; }
+
+    .error-btn-secondary {
+      background: none;
+      color: var(--light-gray);
+      box-shadow: none;
+    }
+
+    .error-btn-secondary::before { background: none; }
+
+    .error-btn-secondary:hover { color: var(--light-gray-70); background: none; }
+
+    @media (min-width: 580px) {
+      .error-card { padding: 60px 50px; }
+
+      .error-code { font-size: 130px; }
+
+      .error-icon-box {
+        width: 90px;
+        height: 90px;
+        border-radius: 22px;
+        font-size: 40px;
+        margin-bottom: 25px;
+      }
+
+      .error-title { font-size: 26px; }
+
+      .error-actions { flex-direction: row; }
+
+      .error-btn { width: max-content; padding: 15px 26px; }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <main class="error-page">
+
+    <div class="error-card">
+
+      <div class="error-icon-box">
+        <ion-icon name="compass-outline"></ion-icon>
+      </div>
+
+      <p class="error-code">404</p>
+
+      <h1 class="error-title">Lost in the void</h1>
+
+      <p class="error-text">
+        The page you're looking for doesn't exist, was moved, or never made it off the drafting table.
+        Let's get you back on track.
+      </p>
+
+      <div class="error-actions">
+        <a href="/" class="error-btn">
+          <ion-icon name="home-outline"></ion-icon>
+          <span>Back to home</span>
+        </a>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

@@ -121,6 +121,18 @@
 
 .contact-info address { font-style: normal; }
 
+.languages-grid {
+  display: grid;
+  grid-template-columns: max-content 1fr; /* name | level | empty filler */
+  gap: 6px;
+}
+
+.lang-name {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+
 .social-list {
   display: flex;
   justify-content: flex-start;

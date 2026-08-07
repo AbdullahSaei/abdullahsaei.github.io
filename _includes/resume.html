@@ -5,34 +5,36 @@
     <h2 class="h2 article-title">Resume</h2>
   </header>
 
-  <!-- education -->
-  <section class="timeline">
-    <div class="title-wrapper">
-      <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
-      <h3 class="h3">Education</h3>
-    </div>
-    <ol class="timeline-list">
-      {% for item in resume.education %}
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">{{ item.degree }}</h4>
-        <p class="timeline-text">{{ item.University }}</p>
-        <span>{{ item.period }}</span>
-      </li>
-      {% endfor %}
-    </ol>
-  </section>
-
   <!-- experience -->
   <section class="timeline">
     <div class="title-wrapper">
-      <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+      <div class="icon-box"><ion-icon name="business-outline"></ion-icon></div>
       <h3 class="h3">Experience</h3>
     </div>
     <ol class="timeline-list">
       {% for item in resume.experience %}
       <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">{{ item.title }} @ {{ item.employer }}</h4>
         <span>{{ item.period }}</span>
+        <h4 class="h4 timeline-item-title">{{ item.title }}</h4>
+        <p class="timeline-subtitle">{{ item.employer }}</p>
+        <p class="timeline-text">{{ item.text }}</p>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+  
+  <!-- education -->
+  <section class="timeline">
+    <div class="title-wrapper">
+      <div class="icon-box"><ion-icon name="school-outline"></ion-icon></div>
+      <h3 class="h3">Education</h3>
+    </div>
+    <ol class="timeline-list">
+      {% for item in resume.education %}
+      <li class="timeline-item">
+        <span>{{ item.period }}</span>
+        <h4 class="h4 timeline-item-title">{{ item.degree }}</h4>
+        <p class="timeline-subtitle">{{ item.University }}</p>
         <p class="timeline-text">{{ item.text }}</p>
       </li>
       {% endfor %}

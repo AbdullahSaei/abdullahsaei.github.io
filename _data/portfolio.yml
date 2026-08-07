@@ -16,11 +16,11 @@ profile:
   location: Hamburg, Germany
   languages: 
     - name: Arabic
-      level: C2
+      level: Native
     - name: English
-      level: C2
+      level: C2 Fluent
     - name: German
-      level: C1
+      level: C1 Fluent
   socials:
     - icon: logo-linkedin
       url: "https://www.linkedin.com/in/abdullahsaei/"
@@ -29,22 +29,28 @@ profile:
 
 about:
   bio: >
-    As an IT System Manager with an M.Sc. in Information and Communication Systems, I bring expertise in managing enterprise IT infrastructure, networks, and web development.
+    As an IT System Manager with an M.Sc. in Information and Communication Systems, I bring expertise in managing enterprise IT infrastructure, networks, and software development.
     With experience designing and developing software prototypes for research initiatives, I excel in translating complex technical requirements into scalable solutions.
     My technical proficiency spans Python, Bash, and C/C++ for software development, combined with hands-on expertise in embedded systems, IoT devices, and sensor integration.
     I have successfully managed IT operations while contributing to cutting-edge research in 5G networks and power-optimization techniques.
-    My background in communications engineering, PCB design, and Raspberry Pi development complements my systems management capabilities.
+    My background in communications engineering and electronics development complements my systems management capabilities.
     I am dedicated to building robust infrastructure, fostering cross-functional collaboration, and delivering innovative technical solutions that drive organizational success.
 
 resume:
   education:
-    - degree: Master of Science (M.Sc.) Information and Communication Systems
-      period: "Sep 2017 - Jul 2021"
+    - degree: M.Sc. Information and Communication Systems
+      period: "Sep 2017 - Sep 2021"
       University: Hamburg University of Technology TUHH
+      text: >
+        Focused on communications systems and software engineering with research in energy optimization.</br>
+        Thesis on network coding for smart grid communications, improving reliability and efficiency.
         
-    - degree: Bachelor of Science (B.Sc.) Electronics and Communications Engineering
+    - degree: B.Sc. Electronics and Communications Engineering
       period: "Sep 2011 - Jul 2016"
       University: Misr International University MIU
+      text: >
+        Gained a solid foundation in electronics and communication systems.</br>
+        Graduation project on D2D communication for 5G.
 
   experience:
     - title: IT-System Manager

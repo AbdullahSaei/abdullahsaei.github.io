@@ -46,10 +46,12 @@
         <div class="icon-box"><ion-icon name="globe"></ion-icon></div>
         <div class="contact-info">
           <p class="contact-title">Languages</p>
-          <p class="contact-link">
-            {% for l in p.languages %}
-              {{ l.name }} ({{ l.level }}){% if forloop.last == false %}, {% endif %}
-            {% endfor %}
+            <div class="languages-grid contact-link">
+              {% for l in p.languages %}
+                <span class="lang-name">{{ l.name }}</span>
+                <span class="lang-level">{{ l.level }}</span>
+              {% endfor %}
+            </div>
         </div>
       </li>
     </ul>
