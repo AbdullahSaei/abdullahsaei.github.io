@@ -18,8 +18,9 @@
 }
 
 .avatar-box {
-  background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+    background: var(--eerie-black-1);
+    border: 2px solid var(--orange-yellow-crayola);
+    border-radius: 100% !important;
 }
 
 .info-content .name {
